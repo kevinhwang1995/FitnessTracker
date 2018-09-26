@@ -1,0 +1,23 @@
+<div>
+<h3>Add a Workout</h3>
+<form class="addForm">
+  <fieldset>
+    <div><label for="date">Date: </label>
+      <input id="date" type="date" name="date"></div>
+    <div><label for="name">Name: </label>
+      <input id="name" type="text" name="name"></div>
+    <div><label for="reps">Reps: </label>
+      <input class="num-input" id="reps" type="number" name="reps" min="0"></div>
+    <div><label for="weight">Weight: </label>
+      <input class="num-input" id="weight" type="number" name="weight" min="0"></div>
+    <div><label for="unit">Unit: </label>
+      <input id="unit" type="radio" name="unit" value="1" checked>LB
+      <input type="radio" name="unit" value="0">KG</div>
+    <input id="addExercise" type="submit" value="Add Workout">
+  </fieldset>
+</form>
+
+<h3>List of Completed Workouts</h3>
+<div id="workoutTable"></div>
+</div>
+<script src="script.js"></script>
